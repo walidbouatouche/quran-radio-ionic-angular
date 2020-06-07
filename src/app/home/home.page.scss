@@ -1,0 +1,153 @@
+
+iframe{
+    overflow:hidden;
+}
+.menu{
+  float:left;
+  margin-left:10px ;
+  color:#031558;
+  font-size: 30px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 500px) {
+  .body{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+.body{
+ 
+background:url('/assets/img/home-background.png'); 
+height: 100%;
+background-size: 100% 100%;
+}
+.sound{
+background:url('/assets/img/current-playing.png'); 
+height: 8%;
+width: 90%;
+background-size: 100% 100%;
+float: right;
+ 
+}
+
+.title{
+background:url('/assets/img/listeners-count.png'); 
+height: 5%;
+width: 90%;
+background-size: 100% 100%;
+float: left;
+ 
+}
+
+.head{
+    background:url('/assets/img/radio_station_name.png'); 
+    height: 5%;
+    width: 90%;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.img {
+    background:url('/assets/img/temp-logo.png'); 
+    height: 30%;
+    width: 50%;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    margin: auto !important;
+}
+
+span {
+  color:#d0bb95;
+}
+
+p{
+    color:white;
+}
+.play {
+    background:url('/assets/img/play_button.png'); 
+    height: 15%;
+    width: 30%;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    margin: auto !important;
+ 
+}
+
+
+.share{
+    background:url('/assets/img/share_button.png');
+    height: 7%;
+    width: 14%;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    float: right;
+   
+}
+
+.power{
+    background:url('/assets/img/internet_explorer.png'); 
+    height: 7%;
+    width: 14%;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    float: left;
+   
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.grow {  
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+ }
+ 
+
+ .time{
+  font-family: 'Courier New', Courier, monospace;
+  color:#031558;
+}
+
+select{
+  background:transparent ;
+  color:white;
+ margin-top:10px;
+ width: 100%;
+}
+.top{
+   margin-top:10px;
+   color:#d0bb95;
+   float:right ;
+}

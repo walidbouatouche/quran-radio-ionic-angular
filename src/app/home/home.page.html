@@ -1,0 +1,67 @@
+<div class="body">
+
+  <div style="height: 17%;">
+  </div>
+
+
+  <div text-center class="head">
+    <span text-center style=" vertical-align: middle">
+      اذاعة القران الكريم
+    </span>
+  </div>
+
+
+  <div style="height: 10%;">
+  </div>
+  <div text-center style=" vertical-align: middle; " class="sound">
+    <div class="top" text-center style="    vertical-align: middle; ">
+      <select text-center name="select" id="select" (change)="play()" style="margin-top:5px;" [(ngModel)]="quran.title">
+        <option value="" selected disabled hidden>أختر السورة المراد سماعها</option>
+        <option text-center
+          style=" vertical-align: middle ;float: right;  color:blue; background: transparent !important; width: 100%;"
+          *ngFor="let soura of data" value="{{soura.index}}"> {{soura.name}} </option>
+      </select>
+      <label for="select"></label>
+    </div>
+  </div>
+
+
+
+  <div style="height: 10%;">
+  </div>
+
+  <div text-center class="img"></div>
+
+  <div text-center class="title">
+    <span text-center style=" vertical-align: middle">
+      رقم السورة: {{quran.title}}
+    </span>
+  </div>
+
+  <br style="clear: both;">
+
+  <div text-center>
+    <br>
+    <img height="40" style="  margin-right: 10%!important;" src="/assets/img/share_button.png">
+    <img (click)="resume()" *ngIf="quran.isStopped" height="80" style="  margin: auto !important;"
+      src="/assets/img/play_button.png">
+    <img (click)=" pause()" *ngIf="quran.isplaying" height="80" style="  margin: auto !important;"
+      src="/assets/img/stop_button.png">
+    <img class="grow" *ngIf="quran.iswaiting" height="80" style="  margin: auto !important;"
+      src="/assets/img/searching_button.png">
+    <img height="40" style="   margin-left: 10%!important;" src="/assets/img/internet_explorer.png">
+    <br>
+
+    <div>
+      <span class="time" style="float: right">
+        {{quran.currentTime  }}
+      </span>
+      <span class="time" style="float: left">
+        {{quran.duration}}
+      </span>
+    </div>
+  </div>
+
+  <ion-progress-bar [value]="progress" color="success"></ion-progress-bar>
+
+</div>
